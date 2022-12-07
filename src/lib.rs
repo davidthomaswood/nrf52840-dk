@@ -294,7 +294,7 @@ impl Board {
         let flash_spim = Spim::new(
             p.SPIM2,
             spim::Pins {
-                sck: pins0.p0_19.into_push_pull_output(Level::Low).degrade(),
+                sck: Some(pins0.p0_19.into_push_pull_output(Level::Low).degrade()),
                 mosi: Some(pins0.p0_20.into_push_pull_output(Level::Low).degrade()),
                 miso: Some(pins0.p0_21.into_floating_input().degrade()),
             },
