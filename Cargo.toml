@@ -14,8 +14,8 @@ repository = "https://github.com/nrf-rs/nrf52840-dk"
 
 [dependencies]
 cortex-m = "0.7"
-embedded-hal = "0.2"
-nrf52840-hal = "0.16.0"
+embedded-hal = "1"
+nrf52840-hal = "0.17"
 
 [dev-dependencies]
 cortex-m-rt = ">=0.6, <0.8"
